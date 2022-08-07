@@ -3,7 +3,7 @@
     <div></div>
     <div>
       <div class="page-btn">
-        <span @click="toChildPage('/qiankun-vue')">vue</span>
+        <span class="test-color" @click="toChildPage('/qiankun-vue')">vue</span>
         <span @click="toChildPage('/qiankun-react')">react</span>
         <span @click="toChildPage('/qiankun-angular')">angular</span>
         <span @click="toChildPage('/qiankun-vue3')">vue3</span>
@@ -27,7 +27,6 @@ export default {
       // if (this.microApps.findIndex((item) => item.activeRule === path) >= 0) {
       //   this.current = path;
       // }
-      console.log(window.location.pathname, "ssssssssssssssssssssss");
     },
     listenRouterChange() {
       // const _wr = function (type) {
@@ -69,8 +68,12 @@ export default {
 #micro-app-container {
   width: 100%;
   height: 600px;
+  position: relative;
 }
 .page-btn span {
   margin-right: 24px;
+}
+.test-color{
+    /* color:red */
 }
 </style>

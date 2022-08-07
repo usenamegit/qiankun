@@ -52,5 +52,8 @@ registerMicroApps(microApps, {
   },
 });
 start({
-  prefetch: true,
+  prefetch: "all",
+/*   sandbox: {
+    strictStyleIsolation: true // 严格沙箱模式
+  } */
 });
