@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:qiankun-main": "cd qiankun-main && npm i",
+    "install:qiankun-vue3": "cd qiankun-vue3 && npm i",
+    "install:qiankun-vue": "cd qiankun-vue && npm i",
+    "install:qiankun-react": "cd qiankun-react && npm i",
+    "install:qiankun-angular": "cd qiankun-angular && npm i",
+    "serve": "npm-run-all --parallel serve:*",
+    "serve:qiankun-vue": "cd qiankun-vue && npm run serve",
+    "serve:qiankun-vue3": "cd qiankun-vue3 && npm run serve",
+    "serve:qiankun-main": "cd qiankun-main && npm run serve",
+    "serve:qiankun-angular": "cd qiankun-angular && npm run serve",
+    "serve:qiankun-react": "cd qiankun-react && npm run serve",
+    "build": "npm-run-all build:* && bash ./scripts/bundle.sh",
+    "build:qiankun-vue": "cd qiankun-vue && npm run build",
+    "build:qiankun-vue3": "cd qiankun-vue3 && npm run build",
+    "build:qiankun-react": "cd sub-html && npm run build",
+    "build:qiankun-angular": "cd qiankun-angular && npm run build",
+    "build:qiankun-main": "cd qiankun-main && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "ng": "^0.0.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
