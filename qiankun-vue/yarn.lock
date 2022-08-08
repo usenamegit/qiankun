@@ -4845,6 +4845,14 @@
   "resolved" "https://registry.npmmirror.com/punycode/-/punycode-2.1.1.tgz"
   "version" "2.1.1"
 
+"qiankun-commonpack@^0.1.0":
+  "integrity" "sha512-pdsbC3Sx8CKQTd0GedQfG8bvextzKOyuYU7jR8WAvi1eA6hUyp7bDqlRyfFLfyOJcoIBCExO1MVIt9frNMJeCw=="
+  "resolved" "https://registry.npmjs.org/qiankun-commonpack/-/qiankun-commonpack-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "core-js" "^3.8.3"
+    "vue" "^2.6.14"
+
 "qiankun@^2.7.4":
   "integrity" "sha512-aihz6ue94CdalEBHBpJGD2UjY30Er0FEy8KxQuxCuEffOFvCXrvBsUm5UkfW32pu4AmAD/yB+lxad0Vzt6l5KQ=="
   "resolved" "https://registry.npmjs.org/qiankun/-/qiankun-2.7.4.tgz"

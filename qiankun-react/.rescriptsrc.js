@@ -5,7 +5,7 @@ module.exports = {
   webpack: (config) => {
     config.output.library = `${name}-[name]`;
     config.output.libraryTarget = "umd";
-    config.output.publicPath = "//localhost:7766/";
+    config.output.publicPath = "//192.168.31.190:7766/";
     config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
     for (const rule of config.module.rules) {
       if (!rule.oneOf) continue;
@@ -30,7 +30,6 @@ module.exports = {
         !(plugin instanceof webpack.HotModuleReplacementPlugin) &&
         !(plugin instanceof ReactRefreshPlugin)
     );
-    console.log(config);
     return config;
   },
   devServer: (config) => {

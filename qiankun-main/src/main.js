@@ -1,9 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { registerMicroApps, start } from "qiankun";
+import router from "./router/index";
+import qkCommonpack from "qiankun-commonpack";
+/* import { registerMicroApps, start } from "qiankun"; */
 Vue.config.productionTip = false;
+Vue.use(qkCommonpack);
 
-const microApps = [
+/* const microApps = [
   {
     name: "qiankun-vue",
     entry: process.env.VUE_APP_SUB_VUE,
@@ -40,20 +43,21 @@ const microApps = [
       routerBase: "/qiankun-angular",
     },
   },
-];
+]; */
 
 new Vue({
   render: (h) => h(App),
+  router,
 }).$mount("#app");
 
-registerMicroApps(microApps, {
+/* registerMicroApps(microApps, {
   beforeLoad: (app) => {
     console.log("before load app.name====>>>>>", app.name);
   },
 });
 start({
   prefetch: "all",
-/*   sandbox: {
+    sandbox: {
     strictStyleIsolation: true // 严格沙箱模式
-  } */
-});
+  }
+}); */

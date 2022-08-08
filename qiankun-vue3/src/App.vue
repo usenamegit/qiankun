@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/qiankun-vue3/">Home</router-link> |
-    <router-link to="/qiankun-vue3/about">About</router-link>
+    <router-link to="/qiankun-child/qiankun-vue3/">Home</router-link> |
+    <router-link to="/qiankun-child/qiankun-vue3/about/">About</router-link>
     <router-view />
   </nav>
 </template>

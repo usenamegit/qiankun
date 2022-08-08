@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <router-link to="/qiankun-child/qiankun-vue/">Home</router-link> |
-    <router-link to="/qiankun-child/qiankun-vue/about">About</router-link>
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+    <showImage :imgSrc="imgSrc"></showImage>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
@@ -16,6 +14,8 @@ export default {
   components: {
     HelloWorld,
   },
+  data() {},
+  created() {},
 };
 </script>
 

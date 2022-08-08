@@ -1,18 +1,17 @@
 {
-  "name": "qiankun-vue",
+  "name": "qiankun-commonpack",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/qiankun-commonpack.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib comments/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "qiankun": "^2.7.4",
-    "qiankun-commonpack": "^0.1.0",
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.4"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

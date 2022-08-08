@@ -2,6 +2,8 @@ import "./public-path";
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import qkCommonpack from "qiankun-commonpack";
+Vue.use(qkCommonpack);
 Vue.config.productionTip = false;
 let instance = null;
 function render(props = {}) {
@@ -11,6 +13,7 @@ function render(props = {}) {
     router,
   }).$mount(container ? container.querySelector("#app") : "#app");
 }
+
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
   render();

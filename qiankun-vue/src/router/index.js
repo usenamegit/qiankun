@@ -5,14 +5,14 @@ import About from "../views/About.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
+export const routes = [
   {
-    path: "/qiankun-vue/",
+    path: "/qiankun-child/qiankun-vue/",
     name: "Home",
     component: Home,
   },
   {
-    path: "/qiankun-vue/about",
+    path: "/qiankun-child/qiankun-vue/about",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -20,4 +20,5 @@ const routes = [
     component: About,
   },
 ];
+
 export default new VueRouter({ mode: "history", routes });
